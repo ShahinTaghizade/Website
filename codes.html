@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shahin</title>
+       <style>
+        body{
+              width:auto;
+        }
+       </style>
+       <style>
+            header{
+                background-color:navy;
+                padding:20px;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+            }
+            header h1{
+                color:white;
+              
+            }
+            header p{
+                color:white;
+                display:flex;
+                font-size:20px;
+                border:10px;
+                padding:10px;
+                background-color:lightblue;
+                border-radius:10px;
+                cursor:pointer;
+            }
+            header div{
+                position:fixed;
+                background-color:lightblue;
+                right:-100%;
+                top:0;
+                height:100%;
+                width:100%;
+                display:flex;
+                text-align:center;
+                flex-direction:column;
+                justify-content:center;
+                align-items: center;
+                cursor:pointer;
+            }
+            header div ul{
+                     list-style: none;
+                     padding:20px;
+            }
+            header div ul li a{
+                     text-decoration:none;
+                     color:white;
+                     padding:10px;
+                     text-align:center;
+            }
+            header div ul li {
+                     padding:10px;
+            }
+            .pages.open{
+                right:0%;
+                transition: left 1s ease-in-out;
+            }
+        </style>
+        <style>
+            footer{
+                background-color: navy;
+                padding:10px;
+                text-align:center;
+                color:white;
+            }
+        </style>
+        <style>
+            .thefirstsection{
+                background:url('https://cdn.pixabay.com/photo/2018/03/05/16/41/programming-3201149_1280.png') no-repeat center center/cover;
+                height:360px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+            }
+            .thefirstsection h2{
+                text-align:center;
+                color:white;
+                font-size:50px;
+            }
+        </style>
+        <style>
+              .thesecondsection h2{
+                text-align:center;
+                font-size:20px;
+              }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Website</h1>
+            <p class="open">=</p>
+            <div class="pages">
+              <h1 class="close">X</h1>
+              <ul>  
+                    <li><a href="codes.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+        </header>
+        <section class="thefirstsection">
+            <h2>Hi</h2>
+        </section>
+        <section class="thesecondsection">
+            <h2>Transforming Ideas into Digital Experiences</h2>
+            <hr>
+            <p>
+                Hi! I am Shahin, a young web developer, who likes building responsive, modern, high-performance websites.
+                With expertise in front-end development, I turn ideas into functional and visually appealing digital solutions.
+            </p>
+            <h3>What I offer:</h3>
+            <p><ul>
+                 <li style="list-style:none; font-weight:bold;">📌 Custom Websites</li>
+                 <li style="list-style:none; font-weight:bold;">📌 Fast and Responsive Design</li>
+                 <li style="list-style:none; font-weight:bold;">📌 SEO</li>
+                 <li style="list-style:none; font-weight:bold;">📌 Maintenance and Support</li>
+            </ul>
+            You can see details at the Services page.
+            </p>
+            <p>
+                If you are a business looking to establish an online presence or an entrepreneur, who wants 
+                a professional website, I am here! We can build something interesting together.
+            </p>
+            <p style="font-weight:bold;">✉️ Contact me today to get started! </p>
+        </section>
+        <footer>
+            <p>&copy; Shahin</p>
+        </footer>
+        <script>
+            document.querySelector(".open").addEventListener("click", function(){
+                document.querySelector(".pages").classList.add("open");
+            });
+            document.querySelector(".close").addEventListener("click", function(){
+                document.querySelector(".pages").classList.remove("open");
+            });
+        </script>
+    </body>
+</html>
